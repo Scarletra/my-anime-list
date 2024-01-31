@@ -1,6 +1,6 @@
 import { Gabarito } from "next/font/google";
 import "./globals.css";
-import NavBar from "../components/NavigationBar";
+import NavBar from "@/components/NavigationBar";
 
 const gabarito = Gabarito({ subsets: ["latin"] });
 
@@ -14,7 +14,9 @@ export default function RootLayout({ children }) {
     <html lang="en">
       <body className={`${gabarito.className} bg-color-dark`} suppressHydrationWarning={true}>
       <NavBar/>
+      <div className="pt-16">
         {children}
+      </div>
       </body>
     </html>
   );
