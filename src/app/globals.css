@@ -23,8 +23,8 @@ img:hover {
 }
 
 .custom-loader {
-  width: 100px;
-  height: 100px;
+  width: 75px;
+  height: 75px;
   display: grid;
   border-radius: 50%;
   -webkit-mask:radial-gradient(farthest-side,#0000 40%,#000 41%);
